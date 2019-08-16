@@ -14,7 +14,7 @@ int HasCycle(Node head) {
     Node tortoise = head;
     Node hare = head;
 
-    while(tortoise != null && tortoise.next != null) {        
+    while(hare != null && hare.next != null) {    // it should be hare, not tortoise here    
         tortoise = tortoise.next;
         hare = hare.next.next;
         
